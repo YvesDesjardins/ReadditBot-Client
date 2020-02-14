@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import NavBar from './components/NavBar.jsx';
+import PostList from './components/PostList.jsx';
+
+const socket = new WebSocket('ws://localhost:3001');
 
 function App() {
+  const [posts, setPosts] = useState({});
+  socket.onmessage = (event) => {
+    // setPosts(posts.concat(event.data));
+    setPosts(JSON.parse(event.data));
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar userCount='0' />
+      <PostList posts={ posts }/>
     </div>
   );
 }
