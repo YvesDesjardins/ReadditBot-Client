@@ -4,7 +4,6 @@ import Post from './Post.jsx';
 export default function PostList(props) {
   const reference = useRef();
   let parsePosts = [];
-  console.log(props);
 
   for (const post in props.posts) {
     const p = props.posts[post];

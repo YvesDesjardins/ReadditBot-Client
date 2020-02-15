@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar userCount='0' />
+      <NavBar/>
       <PostList posts={ posts }/>
     </div>
   );

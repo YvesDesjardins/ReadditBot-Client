@@ -7,11 +7,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.post {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background-color: #d3d3d3;
+}
+
 .post-content {
-  max-width: 50%;
+  background-color: #a8a8a8;
   text-align: left;
+  padding: 1%;
+}
+
+.post-content-title {
+
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.post-content-footer {
+  padding: 1%;
+  background-color: #bdbdbd;
+  text-align: right;
 }
 
 img {
-  max-width: 70%;
+  max-height: 80vh;
+}
+
+.navbar {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 1%;
+  background-color: #FF4500;
+  color: white;
+}
+
+.navbar-sub {
+  font-size: 15px;
 }
