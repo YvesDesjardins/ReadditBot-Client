@@ -3,7 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar.jsx';
 import PostList from './components/PostList.jsx';
 
-const socket = new WebSocket('ws://localhost:3001');
+const socket = new WebSocket('ws://readdit-bot.herokuapp.com/');
+// const socket = new WebSocket('ws://localhost/:80');
 
 function App() {
   const [posts, setPosts] = useState({});
