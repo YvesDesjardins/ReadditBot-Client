@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './css/App.css';
 import NavBar from './components/NavBar.jsx';
 import PostList from './components/PostList.jsx';
 

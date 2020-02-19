@@ -1,10 +1,8 @@
 import React from 'react';
+import '../css/Post.css';
 
 export default function Post(props) {
-  // console.log('props');
-  // console.log(props);
   function parsePost() {
-    if (props.url.slice(-4) === '.jpg')
       return (
         <div className='post'>
           <div className='post-content'>
@@ -20,9 +18,5 @@ export default function Post(props) {
         </div>);
     }
 
-  return (
-    <div>
-      { parsePost() }
-    </div>
-  );
+  return parsePost();
 }

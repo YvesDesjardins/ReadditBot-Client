@@ -1,0 +1,12 @@
+.navbar {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 1%;
+  background-color: #FF4500;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.navbar-sub {
+  font-size: 15px;
+}

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Post from './Post.jsx';
+import '../css/PostList.css';
 
 export default function PostList(props) {
   const reference = useRef();
@@ -29,7 +30,7 @@ export default function PostList(props) {
   }
 
   return (
-    <div>
+    <div className='post-list'>
       { loadingPosts }
       { parsePosts }
       <div ref={reference} />

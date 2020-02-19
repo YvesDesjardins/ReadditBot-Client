@@ -1,0 +1,28 @@
+.post {
+  margin-bottom: 5%;
+  background-color: #d3d3d3;
+}
+
+.post-content {
+  background-color: #a8a8a8;
+  text-align: left;
+  padding: 1%;
+}
+
+.post-content-title {
+
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.post-content-footer {
+  padding: 1%;
+  background-color: #bdbdbd;
+  text-align: right;
+}
+
+img {
+  max-height: 80vh;
+  max-width: 100%;
+}
