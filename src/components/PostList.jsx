@@ -4,6 +4,7 @@ import Post from './Post.jsx';
 export default function PostList(props) {
   const reference = useRef();
   let parsePosts = [];
+  let loadingPosts = null;
 
   for (const post in props.posts) {
     const p = props.posts[post];
@@ -20,8 +21,16 @@ export default function PostList(props) {
     )
   }
 
+  if (parsePosts.length <= 0) {
+    loadingPosts = <div className='loading posts'>Loading posts, please wait!</div>;
+  }
+  else {
+    loadingPosts = null;
+  }
+
   return (
     <div>
+      { loadingPosts }
       { parsePosts }
       <div ref={reference} />
     </div>
