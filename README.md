@@ -27,7 +27,7 @@ Split server/client which takes the latest posts from r/aww on Reddit and displa
   - JSX
 
 ## Issues
-- need to implement mediaquery for mobile/small window sizes
+- Let me know if you find any!
 
 ## Planned features
 - Machine learning + computer vision to filter based on animals in the photos
